@@ -5,7 +5,7 @@
             // getting the first value
             for($k = $i+1; $k < count($arr);$k++){
                 // comparing with the rest of valuses
-                if($arr[$k][0] < $arr[$i][0]) {
+                if(strtolower($arr[$k][0]) < strtolower($arr[$i][0])) {
                     // if yes swop it to the head of the array
                     $temp = $arr[$i];
                     $arr[$i] = $arr[$k];
@@ -20,4 +20,4 @@
 
 
     // Call Function
-    arraysort(['eman', 'ali', 'osama', 'yasser']);
+    arraysort(['Eman', 'ali', 'osama', 'yasser']);
